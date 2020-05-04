@@ -10,6 +10,8 @@
 		ED688E32244E09CF00236EB4 /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED688E28244E09CF00236EB4 /* MyFramework.framework */; };
 		ED688E37244E09CF00236EB4 /* MyFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED688E36244E09CF00236EB4 /* MyFrameworkTests.swift */; };
 		ED688E39244E09CF00236EB4 /* MyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = ED688E2B244E09CF00236EB4 /* MyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED688E44244E0A3700236EB4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED688E42244E0A3700236EB4 /* LoginViewController.swift */; };
+		ED688E45244E0A3700236EB4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED688E43244E0A3700236EB4 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		ED688E31244E09CF00236EB4 /* MyFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED688E36244E09CF00236EB4 /* MyFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFrameworkTests.swift; sourceTree = "<group>"; };
 		ED688E38244E09CF00236EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED688E42244E0A3700236EB4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ED688E43244E0A3700236EB4 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				ED688E2B244E09CF00236EB4 /* MyFramework.h */,
+				ED688E42244E0A3700236EB4 /* LoginViewController.swift */,
+				ED688E43244E0A3700236EB4 /* LoginViewController.xib */,
 				ED688E2C244E09CF00236EB4 /* Info.plist */,
 			);
 			path = MyFramework;
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					ED688E27244E09CF00236EB4 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					ED688E30244E09CF00236EB4 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -178,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED688E45244E0A3700236EB4 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED688E44244E0A3700236EB4 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +349,7 @@
 		ED688E3D244E09CF00236EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = learnios.MyFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +374,7 @@
 		ED688E3E244E09CF00236EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +398,7 @@
 		ED688E40244E09CF00236EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +416,7 @@
 		ED688E41244E09CF00236EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
